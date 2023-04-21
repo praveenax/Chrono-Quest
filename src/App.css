@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+  font-family: "Marcellus_SC", Tofu;
+}
+
+@font-face {
+  font-family: Marcellus_SC;
+  src: url(MarcellusSC-Regular.ttf);
+}
+
+.App{
+  display: flex;
+  
+}
+
+.flex{
+  display: flex;
+}
+
+.w_25{
+  width:25%;
+}
+
+.w_50{
+  width:50%;
+}
+
+.w_100{
+  width:100%;
+}
+
+#gamesection{
+  flex-direction: column;
+}
+
+#scoringArea{
+  height:10vh;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+#topRow{
+  height:55vh;
+  background: lightcoral;
+}
+
+
+#timeline{
+  height:35vh;
+  background: lightseagreen;
+}
+
+#displayCard{
+  display: flex;  
+  justify-content: center;
+}
+
+
+.box_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sm_card{
+  width:50%;
+  height:200px;
+  background: blueviolet;
+  border-radius: 5%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardHolder{
+  margin:4%;
+  background: lightgrey;
+  position: relative;
+}
+
+.cardoutline{
+  /* border:3px dashed grey; */
+  height: 400px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.centralCard{
+  background-color: antiquewhite;
+  margin:2px;
+  border-radius: 10px;
+}
+
+.centralCardImage{
+  width: 100%;
+  padding: 10px;
+}
+
+.centralCardText{
+  text-align: center;
+  padding: 8px;
+  padding-top: 0px;
+  /* font-family: 'Changa One', cursive; */
+  font-family: "Marcellus_SC", Tofu;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#gameTitle{
+  font-family: "Marcellus_SC", Tofu;
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.tl{
+  position: absolute;
+  /* margin: -2px; */
+  width: 120%;
+  font-size: 2px;
+}
+
+.tlText{
+  font-size: 10px;
+}
+
+.tlbtn{
+  z-index: 200;
+}
+
+.selectCard{
+  display: block;
+  margin: auto;
+}
+
+#score {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+#time {
+  font-size: 24px;
+  padding-top: 20px;
+}
