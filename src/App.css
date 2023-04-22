@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   font-family: "Marcellus_SC", Tofu;
 }
@@ -8,98 +8,128 @@
   src: url(MarcellusSC-Regular.ttf);
 }
 
-.App{
+.App {
   display: flex;
-  
+
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.w_25{
-  width:25%;
+.w_25 {
+  width: 25%;
 }
 
-.w_50{
-  width:50%;
+.w_50 {
+  width: 50%;
 }
 
-.w_100{
-  width:100%;
+.w_40 {
+  width: 40%;
 }
 
-#gamesection{
+.w_60 {
+  width: 60%;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+#gamesection {
   flex-direction: column;
 }
 
-#scoringArea{
-  height:10vh;
+#scoringArea {
+  height: 5vh;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 
-#topRow{
-  height:55vh;
-  background: lightcoral;
+#topRow {
+  height: 55vh;
+  /* background: lightcoral; */
+  background: #f0808094;
 }
 
 
-#timeline{
-  height:35vh;
+#timeline {
+  height: 40vh;
   background: lightseagreen;
 }
 
-#displayCard{
-  display: flex;  
+#timeline-wrap {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#displayCard {
+  display: flex;
   justify-content: center;
 }
 
 
-.box_center{
+.box_center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.sm_card{
-  width:50%;
-  height:200px;
-  background: blueviolet;
+.sm_card {
+  width: 50%;
+  height: 200px;
+  background: #dbdbdb;
   border-radius: 5%;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.cardHolder{
-  margin:4%;
+.cardHolder {
+  margin: 4%;
   background: lightgrey;
   position: relative;
 }
 
-.cardoutline{
+.cardoutline {
   /* border:3px dashed grey; */
-  height: 400px;
-  width: 40%;
+  height: 320px;
+  /* width: 40%; */
   border-radius: 10px;
+  max-width: 30%;
+  cursor: pointer;
 }
 
-.centralCard{
+.centralCard {
   background-color: antiquewhite;
-  margin:2px;
+  margin: 2px;
   border-radius: 10px;
+  /* cursor: pointer; */
+
 }
 
-.centralCardImage{
+.centralCard:hover {
+  cursor: pointer;
+  /* cursor: url('custom_pointer.png') 10 3, auto; */
+}
+
+.centralCardImage:hover {
+  /* cursor: url('custom_pointer.png') 10 3, auto; */
+}
+
+
+.centralCardImage {
   width: 100%;
   padding: 10px;
+  max-height: 320px;
 }
 
-.centralCardText{
+.centralCardText {
   text-align: center;
   padding: 8px;
   padding-top: 0px;
@@ -107,40 +137,170 @@
   font-family: "Marcellus_SC", Tofu;
   font-weight: 600;
   font-size: 20px;
+  text-shadow: 1px 1px 4px #7defd3;
 }
 
-#gameTitle{
+#gameTitle {
   font-family: "Marcellus_SC", Tofu;
   font-weight: 600;
-  font-size: 56px;
+  font-size: 32px;
 }
 
-.tl{
+.tl {
   position: absolute;
   /* margin: -2px; */
-  width: 120%;
+  width: 80%;
   font-size: 2px;
 }
 
-.tlText{
+.tlImage {}
+
+.tlText {
   font-size: 10px;
 }
 
-.tlbtn{
+.tlbtn {
   z-index: 200;
 }
 
-.selectCard{
+.selectCard {
   display: block;
   margin: auto;
 }
 
 #score {
   font-size: 24px;
-  padding-top: 20px;
+  padding-top: 8px;
 }
 
 #time {
   font-size: 24px;
-  padding-top: 20px;
+  padding-top: 8px;
 }
+
+.gameoverModalCover {
+  position: fixed;
+
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: #61616177;
+}
+
+.gameoverModal {
+  position: fixed;
+
+  top: 20%;
+  bottom: 40%;
+  left: 20%;
+  right: 20%;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+  /* vertical-align: middle; */
+  padding-top: 8%;
+}
+
+#arrowAnim {
+  width: 60%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 100%;
+  position: absolute;
+}
+
+.arrow {
+  width: 1.2vw;
+  height: 1.2vw;
+  border: .5vw solid;
+  /* border-color: black transparent transparent black; */
+  border-color: transparent white white transparent;
+  transform: rotate(-45deg);
+}
+
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s ease-in-out infinite;
+  animation: slide 4s ease-in-out infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(4vw);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-4vw);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-4vw);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(4vw);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+}
+
+
+/* @media only screen and (max-width: 600px) {
+  #drawCards{
+    display: none;
+  }
+  #displayCard{
+    width:100%;
+  }
+  .cardoutline{
+    max-width: 65%;
+  }
+  #gameTitle{
+    display: none;
+  }
+
+} */
