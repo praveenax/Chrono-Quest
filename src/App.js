@@ -16,7 +16,7 @@ function MenuScreen() {
         Chrono Quest!
         <div>
           <button>New Game</button>
-          <button>Levels</button>
+          {/* <button>Levels</button> */}
           <button>Quit</button>
         </div>
       </div>
@@ -25,7 +25,7 @@ function MenuScreen() {
 }
 
 function App() {
-  const [gameover, setGameover] = useState(true);
+  const [gameover, setGameover] = useState(false);
   return (
     <div className="App flex">
       {

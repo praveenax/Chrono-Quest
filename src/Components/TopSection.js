@@ -8,7 +8,7 @@ function TopSection({ score, time }) {
         Score: {score}
       </div>
       <div id="time" className="">
-        Time: {time}
+        Time:<i className="fa fa-clock-o" aria-hidden="true"></i> {time}
       </div>
     </div>
   )
