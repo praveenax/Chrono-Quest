@@ -1,28 +1,28 @@
 import { useState } from "react";
 import './App.css';
 // import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
-import cards from './cards.json';
+// import cards from './cards.json';
 
 
 import GameSection from "./Components/GameSection";
 
-const allCardList = cards;
+// const allCardList = cards;
 
 //shows menu and level selection
-function MenuScreen() {
-  return (
-    <>
-      <div>
-        Chrono Quest!
-        <div>
-          <button>New Game</button>
-          {/* <button>Levels</button> */}
-          <button>Quit</button>
-        </div>
-      </div>
-    </>
-  )
-}
+// function MenuScreen() {
+//   return (
+//     <>
+//       <div>
+//         Chrono Quest!
+//         <div>
+//           <button>New Game</button>
+//           {/* <button>Levels</button> */}
+//           <button>Quit</button>
+//         </div>
+//       </div>
+//     </>
+//   )
+// }
 
 function App() {
   const [gameover, setGameover] = useState(false);

@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: "Marcellus_SC", Tofu;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 @font-face {
@@ -53,12 +56,14 @@
   height: 55vh;
   /* background: lightcoral; */
   background: #f0808094;
+  /* background-image: url('tex.jpg'); */
 }
 
 
 #timeline {
   height: 40vh;
   background: lightseagreen;
+  overflow: hidden;
 }
 
 #timeline-wrap {
@@ -96,7 +101,7 @@
   /* box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4) */
 }
 
-.start_card{
+.start_card {
   width: 200px;
   height: 200px;
   background: #f4471b;
@@ -109,10 +114,10 @@
   cursor: pointer;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4)
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4)
 }
 
-.sm_card2{
+.sm_card2 {
   width: 50%;
   height: 200px;
   font-size: 27px;
@@ -148,12 +153,11 @@
   /* cursor: pointer; */
   /* min-height: 440px;
   max-height: 440px; */
+  position: relative;
+  box-shadow: 0px 0px 17px 5px #919191d1;
 }
 
-.centralCard:hover {
-  cursor: pointer;
-  /* cursor: url('custom_pointer.png') 10 3, auto; */
-}
+
 
 .centralCardImage:hover {
   /* cursor: url('custom_pointer.png') 10 3, auto; */
@@ -163,7 +167,7 @@
 .centralCardImage {
   width: 100%;
   padding: 10px;
-  max-height: 420px;
+  max-height: 320px;
 }
 
 .centralCardText {
@@ -190,21 +194,39 @@
   font-size: 2px;
   max-height: 270px;
   min-height: 270px;
+  box-shadow: none;
 }
 
-.timelineCardExit{
+.timelineCardExit {
   position: absolute;
   /* margin: -2px; */
   width: 130%;
   font-size: 2px;
-  max-height: 230px;
+  /* max-height: 230px; */
   min-height: 230px;
 }
 
-.tlImage {}
+.timelineCardExit>.tlImage {
+  height: 190px;
+}
+
+.tlImage{
+  height: 215px;
+}
 
 .tlText {
-  font-size: 10px;
+  font-size: 14px;
+  text-shadow: 0 0 black;
+}
+.tlText2 {
+  font-size: 14px;
+  text-shadow: 3px 2px 2px black;
+  position: absolute;
+  color: #fff;
+  background: #0000007a;
+  width: 100%;
+  top: 50%;
+  padding: 4px;
 }
 
 .tlbtn {
@@ -224,6 +246,7 @@
 #time {
   font-size: 24px;
   padding-top: 8px;
+  width: 150px;
 }
 
 .gameoverModalCover {
@@ -248,7 +271,7 @@
   font-size: 40px;
   text-align: center;
   /* vertical-align: middle; */
-  padding-top: 8%;
+  padding-top: 4%;
 }
 
 #arrowAnim {
@@ -336,10 +359,9 @@
   }
 }
 
-.gameoverModalScore{
+.gameoverModalScore {}
 
-}
-.nextRound{
+.nextRound {
   width: 140px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
@@ -356,6 +378,7 @@
   cursor: pointer;
   outline: none;
 }
+
 .nextRound:hover {
   background-color: #0e9189;
   box-shadow: 0px 8px 15px rgb(157 157 157 / 57%);
@@ -363,9 +386,115 @@
   transform: translateY(-3px);
 }
 
-.divimg{
+.divimg {
   height: 400px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ghostnum {
+  position: absolute;
+  /* background: red; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 100px;
+  color: #646464;
+  opacity: 0.4;
+  padding-top: 30%;
+  text-align: center;
+}
+
+.promptmsg {
+  color: #343434;
+  position: absolute;
+  bottom: 10px;
+}
+
+#rules{
+  position: absolute;
+    top: 15%;
+    width: 300px;
+    left: 2%;
+    padding: 1%;
+    background: antiquewhite;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.subtitle{
+  color:antiquewhite;
+  font-size: 30px;
+  padding: 4px;
+  padding-left:10px;
+  position: absolute;
+}
+
+#discardSpace{
+  position: absolute;
+  left: 0;
+  right: 50%;
+  background: red;
+  top: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+
+.centralCard > #discardSpace:hover{
+  background: blue;
+  transform: rotate(-15deg);
+}
+
+#selectSpace{
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  background: blue;
+  top: 0;
+  bottom: 0;
+}
+
+.centralCard > #selectSpace:hover{
+  background: red;
+  transform: rotate(15deg);
+}
+
+.centralCard:hover {
+  cursor: pointer;
+  /* cursor: url('custom_pointer.png') 10 3, auto; */
+  transform: rotate(-15deg);
+}
+
+#ruleTitle{
+  font-size: 18px;
+  font-weight: 600;
+  /* position: absolute; */
+  /* top: -20px; */
+}
+
+#eyeBtn{
+  position: absolute;
+  right:10px;
+  top: 10px;
+  cursor: pointer;
+  top: 15px;
+}
+
+#discardBtn{
+  padding: 6px;
+    margin: auto;
+    display: block;
+    border-radius: 22%;
+    border: 1px solid #fff;
+    color: #000;
+    background: antiquewhite;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.gameoverModalScoreHelp{
+  color: darkgreen;
+    font-size: 26px;
 }
