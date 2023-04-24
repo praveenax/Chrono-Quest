@@ -7,8 +7,8 @@ import _ from "lodash";
 
 function GameSection({ gameover, setGameover }) {
   // console.log(cards);
-  const [seconds, setSeconds] = useState(0);
-  const [deadline, setDeadline] = useState();
+  // const [seconds, setSeconds] = useState(0);
+  // const [deadline, setDeadline] = useState();
   const [timeLeft, setTimeLeft] = useState(null);
   const emptyObj = {
     title: "", image: "", timestamp: 0
@@ -41,13 +41,15 @@ function GameSection({ gameover, setGameover }) {
 
 
   const [score, setScore] = useState(0);
+  const [currscore, setCurrscore] = useState(0);
   const [count, setCount] = useState(0);
-  const [time, setTime] = useState(60);
+  // const [time, setTime] = useState(60);
   const [emptyTL, setEmptyTL] = useState(0);
   const [tArr, setTArr] = useState([emptyObj, emptyObj, emptyObj, emptyObj, emptyObj]);
 
   const [displayCard, setDisplayCard] = useState(emptyObj);
   const [shuffledCards, setShuffled] = useState([]);
+  const [showHelp, setShowHelp] = useState(true);
 
 
   const startGame = () => {
@@ -84,6 +86,7 @@ function GameSection({ gameover, setGameover }) {
     })
     if (minValue === 5) {
       setGameover(true);
+      setTimeLeft(null)
     } else {
       setEmptyTL(minValue);
     }
@@ -107,7 +110,11 @@ function GameSection({ gameover, setGameover }) {
 
   }
 
-  const randNum = (min, max) => Math.floor(Math.random() * max) + min;
+  const hideHelp = () => {
+    setShowHelp(!showHelp);
+  }
+
+  // const randNum = (min, max) => Math.floor(Math.random() * max) + min;
 
   const calcScore = () => {
     let finalScore = 0;
@@ -124,9 +131,9 @@ function GameSection({ gameover, setGameover }) {
       }
     })
 
-    finalScore = isGreater * 10;
+    finalScore = isGreater * 20;
 
-
+    setCurrscore(finalScore);
     setScore(score + finalScore);
 
   }
@@ -135,107 +142,141 @@ function GameSection({ gameover, setGameover }) {
     <div id="gamesection" className="flex w_100">
       <TopSection score={score} time={timeLeft} />
 
+
+      <div id="rules">
+        <div id="ruleTitle">How to Play!</div>
+        <div id="eyeBtn" onClick={() => hideHelp()}><i className="fa fa-eye" aria-hidden="true"></i></div>
+        {
+          showHelp && (
+            <>
+              1. Select event or discard! <br />
+              2. Arrange the events by clicking on the timeline<br />
+              3. Choose the last card to complete the timeline <br />
+              4. Check your score! <br />
+              5. Liked it so far? Load the next round
+            </>
+          )
+        }
+      </div>
+
+
+
       <div id="topRow" className="flex w_100">
 
         <div id="drawCards" className="w_100 box_center">
-         
-
-            {
-              count === 0 && (
-                <>
-                  <div onClick={() => {
-            // setDisplayCard(allCardList[randNum(0,allCardList.length-1)]);
-
-            //lodash - shuffle - 0
-            if (count === 0) {
-              startGame();
-            } else {
-              return;
-            }
 
 
+          {
+            count === 0 && (
+              <>
+                <div onClick={() => {
+                  // setDisplayCard(allCardList[randNum(0,allCardList.length-1)]);
 
-          }} className={"start_card"}>
-                    Start Game!
-                  </div>
-                </>
-              )
-            }
-
-            {
-              count !== 0 && (
-                
-                  <div id="displayCard">
-                    <div className="cardoutline">
-                      {
-                        (displayCard && displayCard.title !== "") && (
-                          <>
-                            <CentralCard data={displayCard} onSelect={onSelect} />
-                            {/* <button className="selectCard" onClick={() => onSelect()}>Select the Card</button> */}
-
-                            {/* <button className="selectCard" >Discard</button> */}
-                          </>
-                        )
-                      }
+                  //lodash - shuffle - 0
+                  if (count === 0) {
+                    startGame();
+                  } else {
+                    return;
+                  }
 
 
-                    </div>
-                  </div>
-                
-              )
-            }
 
-          
-          {/* <br /> */}
-          {/* <div className="flex">Remaining cards!!!! {timeLeft}</div> */}
-          {/* <div className="sm_card" >Discarded Cards</div> */}
+                }} className={"start_card"}>
+                  Start Game!
+                </div>
+              </>
+            )
+          }
+
+          {
+            count !== 0 && (
+
+              <div id="displayCard">
+                <div className="cardoutline">
+                  {
+                    (displayCard && displayCard.title !== "") && (
+                      <>
+                        <CentralCard data={displayCard} onSelect={onSelect} />
+
+                      </>
+                    )
+                  }
+
+
+                </div>
+              </div>
+
+            )
+          }
+
+
+
 
         </div>
-        {/* <div id="displayCard" className="w_60 box_center">
 
-          <div className="cardoutline">
-            {
-              (displayCard && displayCard.title !== "") && (
-                <>
-                  <CentralCard data={displayCard} onSelect={onSelect} />
-                
-                </>
-              )
-            }
-
-
-          </div>
-        </div> */}
 
       </div>
-      {/* Timeline */}
+
       <Timeline tArr={tArr} moveTo={moveTo} emptyTL={emptyTL} count={count} isStatic={false} />
       {
         gameover && (
           <div className="gameoverModalCover">
-            <div className="gameoverModal">
-              End of Round!
+            {
+              currscore > 0 && (
+                <div className="gameoverModal">
+                  End of Round!
+                  <br />
+                  <Timeline tArr={tArr} moveTo={moveTo} emptyTL={emptyTL} isStatic={true} />
 
-              <br />
+                  <div className="gameoverModalScore">
+                    Score {score} <div className="gameoverModalScoreHelp">(You have scored +{currscore} in this round)</div>
+                  </div>
 
-              
-              <Timeline tArr={tArr} moveTo={moveTo} emptyTL={emptyTL} isStatic={true} />
-              
-              <div className="gameoverModalScore">
-              Score {score}
-              </div>
-             
-              {/* <br /> */}
-              <button className="nextRound" onClick={() => {
-                setGameover(false);
-                //score the points
-                calcScore();
-                //reset the timeline
-                setTArr([emptyObj, emptyObj, emptyObj, emptyObj, emptyObj])
+                  {/* <br /> */}
+                  <button className="nextRound" onClick={() => {
+                    setGameover(false);
+                    //score the points
+                    calcScore();
+                    //reset the timeline
+                    setTArr([emptyObj, emptyObj, emptyObj, emptyObj, emptyObj])
 
-                startGame();
-              }}>Next Round!</button>
-            </div>
+                    startGame();
+                  }}>Next Round!</button>
+                </div>
+              )
+            }
+
+            {
+              currscore === 0 && (
+                <div className="gameoverModal">
+                  Game Over!
+
+                  <br />
+
+
+                  <Timeline tArr={tArr} moveTo={moveTo} emptyTL={emptyTL} isStatic={true} />
+
+                  <div className="gameoverModalScore">
+                    Score {score}
+                  </div>
+
+                  {/* <br /> */}
+                  <button className="nextRound" onClick={() => {
+                    // setScore(0);
+                    setGameover(false);
+                    //score the points
+                    // calcScore();
+                    //reset the timeline
+                    setTArr([emptyObj, emptyObj, emptyObj, emptyObj, emptyObj])
+
+                    // startGame();
+                    setScore(0);
+                  }}>Retry!</button>
+                </div>
+              )
+            }
+
+
           </div>
         )
       }

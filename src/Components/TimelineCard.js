@@ -11,12 +11,21 @@ function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
             moveTo(position, data);
           }
         }} whileHover={{
-          scale: 1.05,
-          transition: { duration: 1 },
+          scale: 1.25,
+          transition: { duration: 0.5 },
         }}>
+
 
           <img className="centralCardImage tlImage" src={data["image"]} alt="" />
           <div className="centralCardText tlText">{data["title"]}</div>
+          
+          {
+            (isStatic && data && data?.time && data?.time?.display) && (
+              <div className="centralCardText tlText2">{data["time"]['display']}</div>
+              
+            )
+          }
+          
         </motion.div>
 
 
@@ -48,14 +57,14 @@ function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
       
       {
           (emptyTL === position && count===4 && !isStatic) && (
-            <div>
+            <div className="promptmsg">
               Last Card! Choose Wisely!
             </div>
           )
         }
         {
           (emptyTL === position && count!==4 && !isStatic) && (
-            <div>
+            <div className="promptmsg">
               Next Card here!
             </div>
           )
