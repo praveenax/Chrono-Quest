@@ -152,5 +152,49 @@
             "day": 1,
             "display": 1941
         }
+    },
+    {
+        "title": "Opening of the Suez Canal for traffic",
+        "image": "https://i.pinimg.com/736x/0f/1c/00/0f1c00f899d31cd4b050e80635f4715a--suez-sabotage.jpg",
+        "time": {
+            "year": 1869,
+            "ad": true,
+            "month": 1,
+            "day": 1,
+            "display": 1869
+        }
+    },
+    {
+        "title": "Huns' invasion of Europe",
+        "image": "https://i.pinimg.com/originals/bd/2b/e7/bd2be7e751b168fc43745b69d301bb5e.jpg",
+        "time": {
+            "year": 375,
+            "ad": true,
+            "month": 1,
+            "day": 1,
+            "display": 375
+        }
+    },
+    {
+        "title": "First artificial satellite launched by Russia.",
+        "image": "https://i.pinimg.com/736x/53/5e/e7/535ee7686a3fbb90e2a290c8fdfb6aa7--space-race-soviet-union.jpg",
+        "time": {
+            "year": 1957,
+            "ad": true,
+            "month": 1,
+            "day": 1,
+            "display": 1957
+        }
+    },
+    {
+        "title": "First book printed by Johannes Gutenberg",
+        "image": "https://c1.staticflickr.com/1/39/121285772_f3998d2e7a_b.jpg",
+        "time": {
+            "year": "1455 ",
+            "ad": true,
+            "month": 1,
+            "day": 1,
+            "display": "1455 "
+        }
     }
 ]
