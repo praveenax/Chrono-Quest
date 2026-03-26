@@ -32,7 +32,7 @@ function Timeline({ tArr, moveTo, emptyTL,count,isStatic }) {
         {
           tArr.map((v, i) => {
             return (
-              <div id="cardHolder1" className="cardHolder sm_card" key={i}>
+              <div className="cardHolder sm_card" key={i}>
                 <div className="ghostnum">
                   {
                     getNum(i)
