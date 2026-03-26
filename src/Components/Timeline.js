@@ -29,6 +29,16 @@ function Timeline({ tArr, moveTo, emptyTL, count, isStatic }) {
     <div id="timeline" className="flex w_100">
       <div className="subtitle">Timeline</div>
       <div id="timeline-wrap" className="flex w_100">
+        {!isStatic && (
+          <div className="timelineGuide" aria-hidden="true">
+            <div className="guideLabel">Place cards left to right</div>
+            <div className="guideTrack">
+              <div className="guidePulse" />
+              <div className="guideArrow">&gt;&gt;&gt;</div>
+            </div>
+            <div className="guideHint">Swap cards to rearrange timeline</div>
+          </div>
+        )}
         {tArr.map((v, i) => {
           const isActiveSlot = emptyTL === i && !isStatic;
           return (
