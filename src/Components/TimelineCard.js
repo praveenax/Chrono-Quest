@@ -48,7 +48,6 @@ function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
             </div>
           )}
         </motion.div>
-
       </>
     );
   } else {
