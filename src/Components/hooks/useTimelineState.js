@@ -60,15 +60,18 @@ function useTimelineState(cards) {
     return { nextTimeline, filled: false };
   }, [count, displayCard, emptyTL, shuffledCards, tArr]);
 
-  const moveTo = useCallback((startPosition, data) => {
-    setTArr((prevTimeline) => {
-      const nextTimeline = [...prevTimeline];
-      nextTimeline[emptyTL] = data;
-      nextTimeline[startPosition] = makeEmptyCard();
-      return nextTimeline;
-    });
-    setEmptyTL(startPosition);
-  }, [emptyTL]);
+  const moveTo = useCallback(
+    (startPosition, data) => {
+      setTArr((prevTimeline) => {
+        const nextTimeline = [...prevTimeline];
+        nextTimeline[emptyTL] = data;
+        nextTimeline[startPosition] = makeEmptyCard();
+        return nextTimeline;
+      });
+      setEmptyTL(startPosition);
+    },
+    [emptyTL],
+  );
 
   return {
     count,

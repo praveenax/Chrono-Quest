@@ -13,8 +13,19 @@ function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
           className={
             isStatic ? "centralCard timelineCardExit" : "centralCard tl"
           }
+          role={isStatic ? undefined : "button"}
+          tabIndex={isStatic ? undefined : 0}
+          aria-label={
+            isStatic ? undefined : `Swap "${data.title}" with the empty slot`
+          }
           onClick={() => {
             if (!isStatic) {
+              moveTo(position, data);
+            }
+          }}
+          onKeyDown={(e) => {
+            if (!isStatic && (e.key === "Enter" || e.key === " ")) {
+              e.preventDefault();
               moveTo(position, data);
             }
           }}
