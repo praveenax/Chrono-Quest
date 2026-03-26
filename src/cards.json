@@ -1,200 +1,376 @@
 [
-    {
-        "title": "Fall of the Berlin Wall",
-        "image": "https://th.bing.com/th/id/OIP.uno0VIsBgWAkfXQTQ-wqOwHaK0?w=204&h=299&c=7&r=0&o=5&pid=1.7",
-        "time": {
-            "year": 1989,
-            "ad": true,
-            "month": 11,
-            "day": 9,
-            "display": "9th Nov 1989"
-        }
-    },
-    {
-        "title": "Hubble Space Telescope",
-        "image": "https://i.pinimg.com/736x/41/4c/e2/414ce2488eaef487e3655abd886ce59f--hubble-space-telescope-beautiful.jpg",
-        "time": {
-            "year": 1990,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1990
-        }
-    },
-    {
-        "title": "Wright Brothers' first successful flight",
-        "image": "https://th.bing.com/th/id/OIP.91YM0DjqOFezMcP05pVC3gHaKY?pid=ImgDet&rs=1",
-        "time": {
-            "year": 1903,
-            "ad": true,
-            "month": 12,
-            "day": 17,
-            "display": "December 17, 1903"
-        }
-    },
-    {
-        "title": "Discovery of the New world by Christopher Columbus",
-        "image": "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/11141971/image/cc207ecf40f94edc4479fa43a8809420",
-        "time": {
-            "year": 1492,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1492
-        }
-    },
-    {
-        "title": "The fall of the Roman Empire",
-        "image": "https://th.bing.com/th/id/OIP.EqgbW0MVcq1SmOx0tMls3QHaJ4?pid=ImgDet&rs=1",
-        "time": {
-            "year": 476,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": "476 AD"
-        }
-    },
-    {
-        "title": " Terrorist attacks of 9/11",
-        "image": "https://th.bing.com/th/id/OIP.m9PcE3TM5PHzY0hsL2AMGgHaK1?pid=ImgDet&rs=1",
-        "time": {
-            "year": 2001,
-            "ad": true,
-            "month": 9,
-            "day": 11,
-            "display": "11th Sept 2001"
-        }
-    },
-    {
-        "title": "Sinking of the Titanic",
-        "image": "https://th.bing.com/th/id/OIP.ZIlguXxinBWFU0vDmqGoGQHaKJ?pid=ImgDet&rs=1",
-        "time": {
-            "year": 1912,
-            "ad": true,
-            "month": 4,
-            "day": 15,
-            "display": "15th April 1912"
-        }
-    },
-    {
-        "title": "Black Death",
-        "image": "https://cdn.history.com/sites/2/2016/10/list-jusitinan-Plaguet03.jpg",
-        "time": {
-            "year": 1346,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": "13th Century"
-        }
-    },
-    {
-        "title": "Russian Revolution",
-        "image": "https://s-media-cache-ak0.pinimg.com/736x/9e/59/de/9e59deeb4018344a2e53961cd4309a05.jpg",
-        "time": {
-            "year": 1917,
-            "ad": true,
-            "month": 3,
-            "day": 8,
-            "display": "8th March 1917"
-        }
-    },
-    {
-        "title": "first human spaceflight by Yuri Gagarin",
-        "image": "https://cdn.mos.cms.futurecdn.net/xGAPXe3Ctg9763oTmtESm8.jpg",
-        "time": {
-            "year": 1961,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1961
-        }
-    },
-    {
-        "title": "Alexander Fleming discovers penicillin",
-        "image": "https://www.sciencehistory.org/sites/default/files/styles/rte_full_width/public/historical_profile/bio-fleming-lab-bmsquibb.jpg?itok=Q8oC_HjC",
-        "time": {
-            "year": 1928,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1928
-        }
-    },
-    {
-        "title": "Charles Darwin publishes \"On the Origin of Species,\" ",
-        "image": "https://surfaceimpression.digital/wp-content/uploads/2017/04/Portrait_of_Charles_Darwin._Wellcome_M0010103.jpg",
-        "time": {
-            "year": 1859,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1859
-        }
-    },
-    {
-        "title": "Apollo 11 mission to Moon",
-        "image": "https://cdn.history.com/sites/2/2016/05/Buzz_Aldrin_Apollo_Spacesuit.jpg",
-        "time": {
-            "year": 1969,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1969
-        }
-    },
-    {
-        "title": "The attack on Pearl Harbor",
-        "image": "https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/3/c3/3c30679d-77fa-5b02-8650-b3eeb311d565/5a131aad78187.image.jpg?resize=1200%2C1544",
-        "time": {
-            "year": 1941,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1941
-        }
-    },
-    {
-        "title": "Opening of the Suez Canal for traffic",
-        "image": "https://i.pinimg.com/736x/0f/1c/00/0f1c00f899d31cd4b050e80635f4715a--suez-sabotage.jpg",
-        "time": {
-            "year": 1869,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1869
-        }
-    },
-    {
-        "title": "Huns' invasion of Europe",
-        "image": "https://i.pinimg.com/originals/bd/2b/e7/bd2be7e751b168fc43745b69d301bb5e.jpg",
-        "time": {
-            "year": 375,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 375
-        }
-    },
-    {
-        "title": "First artificial satellite launched by Russia.",
-        "image": "https://i.pinimg.com/736x/53/5e/e7/535ee7686a3fbb90e2a290c8fdfb6aa7--space-race-soviet-union.jpg",
-        "time": {
-            "year": 1957,
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": 1957
-        }
-    },
-    {
-        "title": "First book printed by Johannes Gutenberg",
-        "image": "https://c1.staticflickr.com/1/39/121285772_f3998d2e7a_b.jpg",
-        "time": {
-            "year": "1455 ",
-            "ad": true,
-            "month": 1,
-            "day": 1,
-            "display": "1455 "
-        }
+  {
+    "title": "Fall of the Berlin Wall",
+    "image": "https://th.bing.com/th/id/OIP.uno0VIsBgWAkfXQTQ-wqOwHaK0?w=204&h=299&c=7&r=0&o=5&pid=1.7",
+    "time": {
+      "year": 1989,
+      "ad": true,
+      "month": 11,
+      "day": 9,
+      "display": "9th Nov 1989"
     }
+  },
+  {
+    "title": "Hubble Space Telescope",
+    "image": "https://i.pinimg.com/736x/41/4c/e2/414ce2488eaef487e3655abd886ce59f--hubble-space-telescope-beautiful.jpg",
+    "time": {
+      "year": 1990,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1990
+    }
+  },
+  {
+    "title": "Wright Brothers' first successful flight",
+    "image": "https://th.bing.com/th/id/OIP.91YM0DjqOFezMcP05pVC3gHaKY?pid=ImgDet&rs=1",
+    "time": {
+      "year": 1903,
+      "ad": true,
+      "month": 12,
+      "day": 17,
+      "display": 1447
+    }
+  },
+  {
+    "title": "Discovery of the New world by Christopher Columbus",
+    "image": "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/11141971/image/cc207ecf40f94edc4479fa43a8809420",
+    "time": {
+      "year": 1492,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1492
+    }
+  },
+  {
+    "title": "The fall of the Roman Empire",
+    "image": "https://th.bing.com/th/id/OIP.EqgbW0MVcq1SmOx0tMls3QHaJ4?pid=ImgDet&rs=1",
+    "time": {
+      "year": 476,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": "476 AD"
+    }
+  },
+  {
+    "title": " Terrorist attacks of 9/11",
+    "image": "https://th.bing.com/th/id/OIP.m9PcE3TM5PHzY0hsL2AMGgHaK1?pid=ImgDet&rs=1",
+    "time": {
+      "year": 2001,
+      "ad": true,
+      "month": 9,
+      "day": 11,
+      "display": "11th Sept 2001"
+    }
+  },
+  {
+    "title": "Sinking of the Titanic",
+    "image": "https://th.bing.com/th/id/OIP.ZIlguXxinBWFU0vDmqGoGQHaKJ?pid=ImgDet&rs=1",
+    "time": {
+      "year": 1912,
+      "ad": true,
+      "month": 4,
+      "day": 15,
+      "display": "15th April 1912"
+    }
+  },
+  {
+    "title": "Black Death",
+    "image": "https://cdn.history.com/sites/2/2016/10/list-jusitinan-Plaguet03.jpg",
+    "time": {
+      "year": 1346,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": "13th Century"
+    }
+  },
+  {
+    "title": "Russian Revolution",
+    "image": "https://s-media-cache-ak0.pinimg.com/736x/9e/59/de/9e59deeb4018344a2e53961cd4309a05.jpg",
+    "time": {
+      "year": 1917,
+      "ad": true,
+      "month": 3,
+      "day": 8,
+      "display": "8th March 1917"
+    }
+  },
+  {
+    "title": "first  human spaceflight by Yuri Gagarin",
+    "image": "https://cdn.mos.cms.futurecdn.net/xGAPXe3Ctg9763oTmtESm8.jpg",
+    "time": {
+      "year": 1961,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1961
+    }
+  },
+  {
+    "title": "Alexander Fleming discovers penicillin",
+    "image": "https://www.sciencehistory.org/sites/default/files/styles/rte_full_width/public/historical_profile/bio-fleming-lab-bmsquibb.jpg?itok=Q8oC_HjC",
+    "time": {
+      "year": 1928,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1928
+    }
+  },
+  {
+    "title": "Charles Darwin publishes \"On the Origin of Species,\" ",
+    "image": "https://surfaceimpression.digital/wp-content/uploads/2017/04/Portrait_of_Charles_Darwin._Wellcome_M0010103.jpg",
+    "time": {
+      "year": 1859,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1859
+    }
+  },
+  {
+    "title": "Apollo 11 mission to Moon",
+    "image": "https://cdn.history.com/sites/2/2016/05/Buzz_Aldrin_Apollo_Spacesuit.jpg",
+    "time": {
+      "year": 1969,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1969
+    }
+  },
+  {
+    "title": "The attack on Pearl Harbor",
+    "image": "https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/3/c3/3c30679d-77fa-5b02-8650-b3eeb311d565/5a131aad78187.image.jpg?resize=1200%2C1544",
+    "time": {
+      "year": 1941,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1941
+    }
+  },
+  {
+    "title": "Magna Carta is sealed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg",
+    "time": {
+      "year": 1215,
+      "ad": true,
+      "month": 6,
+      "day": 15,
+      "display": "15th June 1215"
+    }
+  },
+  {
+    "title": "Gutenberg prints the 42-line Bible",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Gutenberg_Bible%2C_42-line%2C_Mainz%2C_c._1455%2C_Martin_Bodmer_Foundation%2C_Cologny.jpg",
+    "time": {
+      "year": 1455,
+      "ad": true,
+      "month": 1,
+      "day": 1,
+      "display": 1455
+    }
+  },
+  {
+    "title": "Martin Luther posts the Ninety-Five Theses",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Luther95theses.jpg",
+    "time": {
+      "year": 1517,
+      "ad": true,
+      "month": 10,
+      "day": 31,
+      "display": "31st Oct 1517"
+    }
+  },
+  {
+    "title": "Spanish Armada is defeated",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Defeat_of_the_Spanish_Armada_8_August_1588.jpg",
+    "time": {
+      "year": 1588,
+      "ad": true,
+      "month": 8,
+      "day": 8,
+      "display": "8th Aug 1588"
+    }
+  },
+  {
+    "title": "The United States Declaration of Independence",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Us_declaration_independence.jpg",
+    "time": {
+      "year": 1776,
+      "ad": true,
+      "month": 7,
+      "day": 4,
+      "display": "4th July 1776"
+    }
+  },
+  {
+    "title": "French Revolution begins with the storming of the Bastille",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Prise_de_la_Bastille.jpg",
+    "time": {
+      "year": 1789,
+      "ad": true,
+      "month": 7,
+      "day": 14,
+      "display": "14th July 1789"
+    }
+  },
+  {
+    "title": "Battle of Waterloo",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Battle_of_Waterloo_1815.PNG",
+    "time": {
+      "year": 1815,
+      "ad": true,
+      "month": 6,
+      "day": 18,
+      "display": "18th June 1815"
+    }
+  },
+  {
+    "title": "American Civil War begins",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Bombardment_of_Fort_Sumter.jpg",
+    "time": {
+      "year": 1861,
+      "ad": true,
+      "month": 4,
+      "day": 12,
+      "display": "12th April 1861"
+    }
+  },
+  {
+    "title": "Telephone patented by Alexander Graham Bell",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Alexander_Graham_Bell.jpg",
+    "time": {
+      "year": 1876,
+      "ad": true,
+      "month": 3,
+      "day": 7,
+      "display": "7th March 1876"
+    }
+  },
+  {
+    "title": "World War I begins",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Ferdinand_Schmutzer_-_Kaiser_Wilhelm_II.jpg",
+    "time": {
+      "year": 1914,
+      "ad": true,
+      "month": 7,
+      "day": 28,
+      "display": "28th July 1914"
+    }
+  },
+  {
+    "title": "Women gain voting rights in the United States",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Suffragists_Parade_Down_Fifth_Avenue_1917.jpg",
+    "time": {
+      "year": 1920,
+      "ad": true,
+      "month": 8,
+      "day": 18,
+      "display": "18th Aug 1920"
+    }
+  },
+  {
+    "title": "Stock Market Crash triggers the Great Depression",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Crowd_outside_NYSE_1929.jpg",
+    "time": {
+      "year": 1929,
+      "ad": true,
+      "month": 10,
+      "day": 2,
+      "display": "29th Oct 1929"
+    }
+  },
+  {
+    "title": "World War II ends in Europe",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Celebration_in_Paris_1944.jpg",
+    "time": {
+      "year": 1945,
+      "ad": true,
+      "month": 5,
+      "day": 8,
+      "display": "8th May 1945"
+    }
+  },
+  {
+    "title": "India gains independence",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Indian_Independence_Day_1947.jpg",
+    "time": {
+      "year": 1947,
+      "ad": true,
+      "month": 8,
+      "day": 15,
+      "display": "15th Aug  1947"
+    }
+  },
+  {
+    "title": "UN adopts the Universal Declaration of Human Rights",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Eleanor_Roosevelt_UDHR.jpg",
+    "time": {
+      "year": 1948,
+      "ad": true,
+      "month": 12,
+      "day": 10,
+      "display": "10th Dec 1948"
+    }
+  },
+  {
+    "title": "First successful ascent of Mount Everest",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Everest_kalapatthar_crop.jpg",
+    "time": {
+      "year": 1953,
+      "ad": true,
+      "month": 5,
+      "day": 29,
+      "display": "29th May 1953"
+    }
+  },
+  {
+    "title": "Berlin Wall is constructed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Berlinermauer.jpg",
+    "time": {
+      "year": 1961,
+      "ad": true,
+      "month": 8,
+      "day": 13,
+      "display": "13th Aug 1961"
+    }
+  },
+  {
+    "title": "Human Genome Project is completed",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/DNA_Overview2.png",
+    "time": {
+      "year": 2003,
+      "ad": true,
+      "month": 4,
+      "day": 14,
+      "display": "14th April 2003"
+    }
+  },
+  {
+    "title": "Smartphone era begins with first iPhone launch",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/IPhone_first_gen.svg",
+    "time": {
+      "year": 2007,
+      "ad": true,
+      "month": 6,
+      "day": 29,
+      "display": "29th June 2007"
+    }
+  },
+  {
+    "title": "WHO declares COVID-19 a global pandemic",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/2019-nCoV-CDC-23312_without_background.png",
+    "time": {
+      "year": 2020,
+      "ad": true,
+      "month": 3,
+      "day": 11,
+      "display": "11th March 2020"
+    }
+  }
 ]
