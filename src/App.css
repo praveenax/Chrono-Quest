@@ -286,87 +286,85 @@
   gap: 8px;
 }
 
-#arrowAnim {
-  width: 60%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 100%;
+.timelineGuide {
+  width: 100%;
+  color: #eafffd;
+  margin: 4px 20px 0;
+  text-align: center;
+}
+
+.guideLabel {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.guideTrack {
+  position: relative;
+  height: 22px;
+  margin: 2px auto 0;
+  width: min(600px, 90%);
+  border-top: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+.guidePulse {
   position: absolute;
+  top: -4px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  animation: guidePulse 2.1s linear infinite;
 }
 
-.arrow {
-  width: 1.2vw;
-  height: 1.2vw;
-  border: 0.5vw solid;
-  /* border-color: black transparent transparent black; */
-  border-color: transparent white white transparent;
-  transform: rotate(-45deg);
-}
-
-.arrowSliding {
+.guideArrow {
   position: absolute;
-  -webkit-animation: slide 4s ease-in-out infinite;
-  animation: slide 4s ease-in-out infinite;
+  top: -19px;
+  left: 0;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  animation: guideArrow 2.1s ease-in-out infinite;
 }
 
-.delay1 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+.guideHint {
+  font-size: 13px;
+  margin-top: -2px;
+  opacity: 0.95;
 }
 
-.delay2 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-.delay3 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-@-webkit-keyframes slide {
+@keyframes guidePulse {
   0% {
-    opacity: 0;
-    transform: translateX(10vw);
+    transform: translateX(0);
+    opacity: 0.2;
   }
 
-  20% {
+  15% {
     opacity: 1;
-    transform: translateX(4vw);
-  }
-
-  80% {
-    opacity: 1;
-    transform: translateX(-4vw);
   }
 
   100% {
-    opacity: 0;
-    transform: translateX(-10vw);
+    transform: translateX(calc(min(600px, 90vw) - 14px));
+    opacity: 0.2;
   }
 }
 
-@keyframes slide {
+@keyframes guideArrow {
   0% {
-    opacity: 0;
-    transform: translateX(-10vw);
+    transform: translateX(0);
+    opacity: 0.35;
   }
 
-  20% {
+  50% {
     opacity: 1;
-    transform: translateX(-4vw);
-  }
-
-  80% {
-    opacity: 1;
-    transform: translateX(4vw);
   }
 
   100% {
-    opacity: 0;
-    transform: translateX(10vw);
+    transform: translateX(calc(min(600px, 90vw) - 60px));
+    opacity: 0.35;
   }
 }
 
@@ -585,6 +583,20 @@
   #timeline-wrap {
     flex-wrap: nowrap;
     padding-bottom: 8px;
+  }
+
+  .timelineGuide {
+    margin: 4px 8px 0;
+    min-width: 260px;
+  }
+
+  .guideTrack {
+    width: 92%;
+  }
+
+  .guideLabel,
+  .guideHint {
+    font-size: 12px;
   }
 
   .cardHolder {
