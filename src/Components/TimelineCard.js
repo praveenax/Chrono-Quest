@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
 function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
+  const onImageError = (event) => {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = "/logo192.png";
+  };
+
   if (data && data.title !== "") {
     return (
       <>
@@ -21,7 +26,8 @@ function TimelineCard({ position, data, moveTo, emptyTL, count, isStatic }) {
           <img
             className="centralCardImage tlImage"
             src={data["image"]}
-            alt=""
+            alt={data["title"] || "Timeline event card"}
+            onError={onImageError}
           />
           <div className="centralCardText tlText">{data["title"]}</div>
 
